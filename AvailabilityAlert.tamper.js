@@ -10,6 +10,8 @@
 // @grant	GM_setValue
 // @grant	GM_getValue
 // @author    William Holland
+// @updateURL	https://github.com/vdeogmer/AvailabilityAlert/raw/Dev/AvailabilityAlert.tamper.js
+// @downloadURL	https://github.com/vdeogmer/AvailabilityAlert/raw/Dev/AvailabilityAlert.tamper.js
 // ==/UserScript==
 
 PushBullet.APIKey = "";
@@ -18,7 +20,7 @@ if (GM_getValue("availability") === undefined) {
     GM_setValue("queue",5);
 }
 if (parseInt(document.getElementsByClassName("avail")[1].innerText) < GM_getValue("availability") ) {
-    document.body.innerHTML += '<embed id="sound_" autostart="true" hidden="true" src="http://www.waveevents.com/MyFilez/wavs/starwars/sentnc20.wav" />';
+    document.body.innerHTML += '<embed id="sound_" autostart="true" hidden="true" src="https://github.com/vdeogmer/AvailabilityAlert/raw/Dev/R2D2.wav" />';
     if(PushBullet.APIKey){
         PushBullet.push("note", null, null, {title:"Availability Alert",body:"Availability is at "+ document.getElementsByClassName("avail")[1].innerText + "!"});
     } else {
