@@ -20,7 +20,7 @@ if (GM_getValue("availability") === undefined) {
     GM_setValue("queue",5);
 }
 if (parseInt(document.getElementsByClassName("avail")[1].innerText) < GM_getValue("availability") ) {
-    document.body.innerHTML += '<embed id="sound_" autostart="true" hidden="true" src="https://drive.google.com/uc?export=download&id=0BzY5Uk5_ea2YRXE3WS1KUzQ1UWs" />';
+    document.body.innerHTML += '<audio autoplay> <source src="https://drive.google.com/uc?export=download&id=0BzY5Uk5_ea2YRXE3WS1KUzQ1UWs"/></audio>';
     if(PushBullet.APIKey){
         PushBullet.push("note", null, null, {title:"Availability Alert",body:"Availability is at "+ document.getElementsByClassName("avail")[1].innerText + "!"});
     } else {
