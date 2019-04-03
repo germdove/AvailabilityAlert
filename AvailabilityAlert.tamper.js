@@ -11,8 +11,8 @@
 // @grant GM_getValue
 // @grant GM_deleteValue
 // @author    William Holland
-// @updateURL	https://github.com/vdeogmer/AvailabilityAlert/raw/Dev/AvailabilityAlert.tamper.js
-// @downloadURL	https://github.com/vdeogmer/AvailabilityAlert/raw/Dev/AvailabilityAlert.tamper.js
+// @updateURL	https://raw.githubusercontent.com/vdeogmer/AvailabilityAlert/master/AvailabilityAlert.tamper.js
+// @downloadURL	https://raw.githubusercontent.com/vdeogmer/AvailabilityAlert/master/AvailabilityAlert.tamper.js
 // ==/UserScript==
 
 if (GM_getValue("availability") === undefined) {
