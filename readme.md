@@ -7,4 +7,4 @@ Gives configurable alerts for when availability drops down below a specified num
 
 Alerts default to a popup in a new window, but if a PushBullet key is supplied, the alerts will be sent through PushBullet.
 
-https://vdeogmer.github.io/AvailabilityAlert/AvailabilityAlert.tamper.js
+[AvailabilityAlert.tamper.js](https://vdeogmer.github.io/AvailabilityAlert/AvailabilityAlert.tamper.js)
